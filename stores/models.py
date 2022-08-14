@@ -10,3 +10,8 @@ class Store(models.Model):
 
     def __str__(self):
         return self.name
+class Post(models.Model):
+    anything = models.CharField(max_length=256)
+
+    def __str__(self):
+        return self.anything
